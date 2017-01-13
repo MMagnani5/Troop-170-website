@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Source+Sans+Pro:400,600,700');
 
 body {
-  padding-top:70px;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   font-size: 2em;
@@ -9,17 +8,82 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0;
 }
-.navbar {
-  border-radius: 0;
-  border: 0;
-}
+
 
 .jumbotron {
-  padding-left: 300px;
+  padding-left: 200px;
+  margin-top: 60px;
+
 } 
+
+/** Header Nav **/
+
+header .navbar-default {
+  background-color: #FFCF69;
+}
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 15px 10px;
+}
+header .navbar-default .navbar-nav a:hover {
+  color: red;
+}
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color:red ;
+  background: transparent;
+  border-bottom: 4px solid red;
+}
+header .navbar-default .navbar-nav .active a:hover {
+  color: green;
+  background: transparent;
+  text-shadow: none;
+}
+
+/** Navbar Brand**/
+header .navbar-brand h1 {
+  font-size: 30px;
+  line-height: 22px;
+  color: red;
+  
+}
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 200;
+}
+/**  Navbar Toggle **/
+
+header .navbar-toggle {
+  background-color: red;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/**About Page**/
+#about {
+  background-color: ;
+}
+
+/**video Page**/
+.embed-responsive{
+  width: 70%;
+  height: 50%;
+  background-position: center,center; 
+}
+
+
+
+/** Footer Nav **/
+footer{
+  background-color: grey;
+}
 footer .navbar-default {
   background: transparent;
 }
