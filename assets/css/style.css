@@ -5,6 +5,7 @@ body {
   font-weight: 300;
   font-size: 2em;
   position: relative;
+  background-color: #C23D31;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
@@ -13,29 +14,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.jumbotron {
-  padding-left: 200px;
-  margin-top: 60px;
-
-} 
 
 /** Header Nav **/
+header .navbar {
+  padding: 10px 0;
+  transition: all .5s ease-out;
+}
 
 header .navbar-default {
-  background-color: #FFCF69;
+  background-color:#7B241C;
 }
 header .navbar-default .navbar-nav a {
-  color: white;
+  color: #fff;
   padding: 15px 10px;
 }
 header .navbar-default .navbar-nav a:hover {
-  color: red;
+  color: yellow;
+  font-weight: bold;
 }
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
-  color:red ;
+  color:yellow ;
   background: transparent;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid green;
 }
 header .navbar-default .navbar-nav .active a:hover {
   color: green;
@@ -44,16 +45,19 @@ header .navbar-default .navbar-nav .active a:hover {
 }
 
 /** Navbar Brand**/
+
+
 header .navbar-brand h1 {
   font-size: 30px;
+  font-weight: bold;
   line-height: 22px;
-  color: red;
+  color:#fff;
   
 }
 header .navbar-brand span.subhead {
   display: block;
   font-family: "Roboto Slab", serif;
-  font-size: .6em;
+  font-size: .7em;
   font-weight: 200;
 }
 /**  Navbar Toggle **/
@@ -66,27 +70,74 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-/**About Page**/
-#about {
-  background-color: ;
+/**  nav inbody **/
+header .inbody {
+  background:rgba(104,73,49,.9);
+}
+header .navbar.inbody {
+  padding-bottom: 2px;
+}
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
 }
 
-/**video Page**/
-.embed-responsive{
-  width: 70%;
-  height: 50%;
-  background-position: center,center; 
+header .inbody .navbar-brand h1 {
+  font-size: 1.5em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
 }
 
 
-
-/** Footer Nav **/
-footer{
-  background-color: grey;
-}
-footer .navbar-default {
-  background: transparent;
-}
+/**  Page **/
 .page {
   padding: 50px 0;
 }
@@ -95,4 +146,130 @@ footer .navbar-default {
   text-align: center;
   margin-bottom: 30px;
 }
+
+
+/**About Page**/
+#about {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #7B241C,#C23D31);
+}
+
+
+/**video Page**/
+#video{
+   background-color: black;
+   color: #fff;
+}
+.embed-responsive{
+  width: 70%;
+  height: 50%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin-left: 250px;
+  height: 200px;
+ }
+
+/**Calendar Page**/
+#cal{
+background-image: url(../images/tmr.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+
+}
+.calendar{
+  color:#7B241C;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.btn-calendar{
+  border:2px solid;
+  border-color: #737773;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: transparent;
+  font-weight: bold;
+  color:#7B241C;
+}
+
+/**Join Page**/
+#join{
+  background-image: url(../images/river.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: #fff;
+}
+
+.btn-join{
+  border:2px solid;
+  border-color: #737773;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: transparent;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+
+.fb-body{
+  color:#3498DB;
+  font-weight:bold;
+  font-size: 1.2em;
+  padding-left: 150px;
+}
+.church-body{
+  color:#3498DB;
+  font-weight:bold;
+  font-size: 1.2em;
+}
+
+
+
+/**Eagle Page**/
+#eagle{
+ background-image: url(../images/eagle.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#eagle h2 {
+  color: #fff;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    font-size: 
+}
+td{
+  color:#fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  
+}
+
+
+
+/** Footer Nav **/
+footer{
+  background: #586D74;
+  color: white;
+  font-size: .8em;
+  padding: 10px 0 15px 0;
+  text-align: center;
+
+}
+
+
 

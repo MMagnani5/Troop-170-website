@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
    <!--Bootstraps-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--Font Awesome-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!--style CSS-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -31,54 +33,52 @@
         <ul class="nav navbar-nav navbar-right">
          <li class="active"><a href="#featured">Home</a></li>
          <li><a href="#about">About Us</a></li>
-         <li><a href="#photo">Video</a></li>  
+         <li><a href="#video">Video</a></li>  
           <li><a href="#cal">Calendar</a></li> 
-          <li><a href="#join">Join</a></li>  
+          <li><a href="#join">Join</a></li>
+          <li><a href="#eagle">Eagle</a></li>   
        </ul> 
       </div> <!--collapse navbar-collapse-->
     </div><!--container-->
    </nav>  
 
-<div class="container">
-  <div class="jumbotron">
+<div class="carousel fade" data-ride="carousel" id="featured">
 
-  <img src="assets/images/prepared.jpg" class="img-rounded">
-  </div> <!--Jumbotron-->
-  </div><!--container--> 
+    <ol class="carousel-indicators">
+    </ol>
+
+    <div class="carousel-inner fullheight">
+      <div class="item active"><img src="assets/images/camp2.jpg" alt="camp2 Photo"></div>
+      <div class="item"><img src="assets/images/scout2.jpg" alt="scout2"></div>
+      <div class="item"><img src="assets/images/scout1.jpg" alt="scout1"></div>
+      <div class="item"><img src="assets/images/scout3.jpg" alt="scout3"></div>
+      <div class="item"><img src="assets/images/scout4.jpg" alt="scout4"></div>
+       <div class="item"><img src="assets/images/scout5.jpg" alt="scout4"></div>         
+    </div><!-- carousel-inner -->
+
+    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div><!-- featured carousel -->
 </header>
 
 <div class="main">
 <div class="page" id="about">
-<h2>Welcome to Troop 170 Website</h2>
-<div class="row"> 
-  <p class="col-md-6 col-md-offset-1">Troop 170 is one of the oldest troops in the Bronx, with an initial charter date of 1927. With over 75 years continuous service and character development of the youth in our community, we boast numerous successful alumni.We are chartered through Saint Clare's Church, 1918 Paulding Avenue, in the Bronx. There are currently over 15 volunteer adult leaders, with over a century of Scout leadership and youth work experience.To join, come down any Thursday night. We meet in the lower church. Please enter from the Paulding Avenue side entrance.</p>
+<h2>Welcome to Troop 170</h2>
+<div class="row">
+  <p class="col-md-5 col-md-offset-1" >Troop 170 is one of the oldest troops in the Bronx, with an initial charter date of 1927. With over 75 years continuous service and character development of the youth in our community, we boast numerous successful alumni.&nbsp;</p>
+  <p class="col-md-5"> We are chartered through Saint Clare's Church, 1918 Paulding Avenue, in the Bronx. There are currently over 15 volunteer adult leaders, with over a century of Scout leadership and youth work experience. To join, come down any Thursday night. We meet in the lower church. Please enter from&nbsp; the Paulding Avenue side entrance.</p>
+  
+</div><!--row-->
 
 
-<div class="col-md-2">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      Come Join us
-    </div>
-    <div class="panel-body">
-      <p>We meet every Thursday at 7:30 in Lower Church at  <span class="button"><a href="http://www.stclarebronx.org/" class="btn btn-info">St.Clare's Church
-      </span></a></p>
-      <p>Also check out of Facebook Page <span class="button">
-        <a href="https://www.facebook.com/BoyScoutTroop170/" class="btn btn-info"> Troop 170
-      </span></a></p>
-    </div>
-  </div>
-   </div> <!-- row --> 
-
+ 
 </div><!--about page-->
 
-
-
-
-  
-   
-
-
-<div class="page" id="photo">
+<div class="page" id="video">
 <div class="content-container">
 <h2>Video</h2>
 <div class="row">
@@ -91,8 +91,9 @@
 
 <div class="page" id="cal">
 <div class="content-container">
+<p class="calendar">Click the Calendar Link below see our schedule trips and meetings for 2017</p>
 <h2>
-<a href="https://calendar.google.com/calendar/embed?src=troop170bronx%40gmail.com&ctz=America/New_York" target="_blank" class="btn btn-danger btn-join text-uppercase">Troop 170 Calendar</a></h2>
+<a href="https://calendar.google.com/calendar/embed?src=troop170bronx%40gmail.com&ctz=America/New_York" target="_blank" class="btn btn-danger btn-calendar text-uppercase">Troop 170 Calendar</a></h2>
 
 <div class="row">
 </div><!--row-->
@@ -103,26 +104,103 @@
 <div class="content-container">
 <h2>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmocru76DFZLfrqoHU_VwOLldKkDGpwWixjhvf3b1S5lQ_Ew/viewform" target="_blank" class="btn btn-danger btn-join text-uppercase">Join</a></h2>
+<h2>The Boy Scout program is for boys who 11 years old <br> or 10 and completed the Order of Light or finished the 5th grade</h2>
 
+<div class="media-body fb-body text-left">
+
+Follow us on <i class="fa fa-facebook-official" aria-hidden="true"></i>
+<span class="btn btn-default btn-join"> 
+<a href="https://www.facebook.com/BoyScoutTroop170/" target="_blank">
+Troop 170 Facebook </span></a>
+</div><!--media-body fb-->
+<div class="media-body church-body text-left">
+We are located at <i class="fa fa-bell" aria-hidden="true"></i>
+<span class="btn btn-default btn-join"> 
+<a href="http://www.stclarebronx.org/" target="_blank">St. Clarie's Church </span></a>
+</div><!--media-body Church-->
 <div class="row">
 </div><!--row-->
 </div><!--content-container-->
 </div><!--Join page-->
 
+<div class="page" id="eagle">
+<div class="content-container">
+<h2>Eagle Roll Call</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>Year</th>
+</tr>
+<tr>
+<td>Bernard Russiello</td>
+<td>1961</td>
+</tr>
+<tr>
+<td>Richard Babaian</td>
+<td>1961</td>
+</tr>
+<tr>
+<td>Robert F. Hartell</td>
+<td>1963</td>
+</tr>
+<tr>
+<td>Peter Hepburn</td>
+<td>1980</td>
+</tr>
+</tr>
+<tr>
+<td>James Fields</td>
+<td>1991</td>
+</tr>
+</tr>
+<tr>
+<td>Brian Yovine</td>
+<td>1992</td>
+</tr>
+<tr>
+<td>Marc Yovine</td>
+<td>1994</td>
+</tr>
+<tr>
+<td>Derek Yovine</td>
+<td>1997</td>
+</tr>
+<tr>
+<td>Andrew Proto</td>
+<td>1997</td>
+</tr>
+<tr>
+<td>Howard Goldberg</td>
+<td>1998</td>
+</tr>
+<tr>
+<td>David Kwak</td>
+<td>2003</td>
+</tr>
+<tr>
+<td>Martin LaRocca</td>
+<td>2006</td>
+</tr>
+</table>
+
+<div class="row">
+</div><!--row-->
+</div><!--content-container-->
+</div><!--Eagle page-->
+
+
+
+
+
 <footer>
 <div class="content container-fluid">
 <div class="row">
-  <div class="col-sm-6">
-    <p>1918 Paulding Ave <br>Bronx <br> NY 10461</p>
+  <div class="col-sm-12">
+    <p>BOY SCOUTS OF AMERICA</p>
+    <p>GREATER NEW YORK COUNCIL</p>
+    <p>Copyright 2017. All Rights Reserved</p>
   </div><!--col-sm-6-->
-  <div class="col-sm-6">
-    <nav class="navbar navbar-default" role="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://www.stclarebronx.org/">St.Clare's</a></li>
-        <li></li>
-      </ul>
-    </nav>
-  </div><!--col-sm-6-->
+ 
  </div> <!--row-->
 </div><!--content-container-->
 </footer>
